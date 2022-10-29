@@ -16,35 +16,47 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="container">
-      <a href="#" class="logo"><span lang="en">Web</span>Studio</a>
+  <!-- HEADER -->
+
+  <header class="header">
+    <div class="header__container container">
+      <a href="#" class="header__logo logo"><span class="logo--web" lang="en">Web</span>Studio</a>
       <nav>
-        <ul class="main-navigation">
-          <li class="item">
-            <a href="./index.html" class="link">Студія</a>
+        <ul class="header__navigation navigation">
+          <li class="navigation__item">
+            <a href="./index.html" class="navigation__link">Студія</a>
           </li>
-          <li class="item"><a href="./portfolio.html" class="link"><span class="studio">Портфоліо</span></a></li>
-          <li class="item">
-            <a href="./" class="link">Контакти</a>
+          <li class="navigation__item">
+            <a href="./portfolio.html" class="navigation__link"><span class="studio">Портфоліо</span></a>
+          </li>
+          <li class="navigation__item">
+            <a href="./" class="navigation__link">Контакти</a>
           </li>
         </ul>
       </nav>
-      <ul class="main-info">
-        <li class="item-info">
-          <a href="mailto:info@devstudio.com" class="link"><span lang="en">info@devstudio.com</span>
-            <svg class="icon-mail">
+
+      <!-- CONTACTS -->
+
+      <ul class="header__contacts contacts">
+        <li class="contacts__item">
+          <a href="mailto:info@devstudio.com" class="navigation__link"><span lang="en">info@devstudio.com</span>
+            <svg class="contacts__icon">
               <use href="./images/icons.svg#icon-envelope-1"></use>
             </svg></a>
         </li>
-        <li class="item-info"><a href="tel:+380961111111" class='link'>+38 096 111 11 11
-            <svg class="icon-mail">
+        <li class="contacts__item">
+          <a href="tel:+380961111111" class="navigation__link">+38 096 111 11 11
+            <svg class="contacts__icon">
               <use href="./images/icons.svg#icon-smartphone-1"></use>
             </svg>
-          </a></li>
+          </a>
+        </li>
       </ul>
     </div>
   </header>
+
+  <!-- MAIN -->
+
   <main>
     <section class="section">
       <div class="container">
@@ -205,41 +217,68 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
-    <div class="container">
-      <div>
-        <a href="#" class="logo-footer"><span lang="en">Web</span>Studio</a>
-        <address class="adress-footer">
-          <p class="footer-address">м. Київ, пр-т Лесі Українки, 26</p>
-          <ul class="info-footer">
-            <li class="item-infos">
-              <a href="mailto:info@devstudio.com" class="link-footer"><span lang="en">info@devstudio.com</span></a>
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__thumb">
+        <a href="#" class="footer__logo"><span class="logo--wrap" lang="en">Web</span>Studio</a>
+        <address class="footer__address">
+          <p class="footer__desc">м. Київ, пр-т Лесі Українки, 26</p>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="mailto:info@devstudio.com" class="footer__link"><span lang="en">info@devstudio.com</span></a>
             </li>
-            <li class="item-infos"><a href="tel:+380961111111" class="link-footer">+38 096 111 11 11</a></li>
+            <li class="footer__item">
+              <a href="tel:+380961111111" class="footer__link">+38 096 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>
-      <div class="thumb">
-        <p class="join">Приєднуйтесь</p>
-        <ul class="footer-icon">
-          <li class="footer-icon-list"><a href="" class="footer-icon-link" target="_blank"><svg class="icon-footer"
-                width="20" height="20">
+
+      <!-- FOOTER__JOIN -->
+
+      <div class="join__thumb">
+        <p class="join__title">Приєднуйтесь</p>
+        <ul class="join__list">
+          <li class="join__item">
+            <a href="" class="join__link" target="_blank"><svg class="join__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-instagram-2-1"></use>
-              </svg></a></li>
-          <li class="footer-icon-list"><a href="" class="footer-icon-link" target="_blank"><svg class="icon-footer"
-                width="20" height="20">
+              </svg></a>
+          </li>
+          <li class="join__item">
+            <a href="" class="join__link" target="_blank"><svg class="join__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-twitter-1-1"></use>
-              </svg></a></li>
-          <li class="footer-icon-list"><a href="" class="footer-icon-link" target="_blank"><svg class="icon-footer"
-                width="20" height="20">
+              </svg></a>
+          </li>
+          <li class="join__item">
+            <a href="" class="join__link" target="_blank"><svg class="join__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-facebook-1-1"></use>
-              </svg></a></li>
-          <li class="footer-icon-list"><a href="" class="footer-icon-link" target="_blank"><svg class="icon-footer"
-                width="20" height="20">
+              </svg></a>
+          </li>
+          <li class="join__item">
+            <a href="" class="join__link" target="_blank"><svg class="join__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-linkedin-1-1"></use>
-              </svg></a></li>
+              </svg></a>
+          </li>
         </ul>
       </div>
+
+      <!-- SUBSCRIBE -->
+
+      <form class="subscribe">
+        <b class="subscribe__title">Підпишіться на розсилку</b>
+        <div class="subscribe__thumb">
+          <label for="email-footer"></label>
+          <input class="subscribe__input" type="email" name="email-footer" id="email-footer" placeholder="E-mail" />
+          <button class="subscribe__submit" type="submit">
+            <span class="subscribe__wrap">Підписатися</span>
+            <svg class="subscribe__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
     </div>
   </footer>
 </body>
