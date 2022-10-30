@@ -1,0 +1,30 @@
+.contacts {
+  display: flex;
+  color: $background-text-color;
+  margin-left: auto;
+  &.contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contacts__icon {
+  width: 16px;
+  height: 16px;
+  content: '';
+  fill: currentColor;
+}
+
+.studio {
+  color: $brand-color;
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    border-bottom: 4px solid $brand-color;
+    left: 0;
+    bottom: -1%;
+  }
+}

@@ -1,0 +1,41 @@
+.navigation {
+  display: flex;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation__link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $product-text-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $brand-color;
+  }
+}
+.navigation__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row-reverse;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .header__navigation .navigation__link:hover,
+.header__navigation .navigation__link:focus {
+  color: $brand-color;
+}
+ */
